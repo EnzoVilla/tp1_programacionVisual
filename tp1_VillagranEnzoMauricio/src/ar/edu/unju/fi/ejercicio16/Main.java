@@ -17,16 +17,16 @@ public class Main {
 		System.out.println("Cantidad de elementos: "+nombres.length);
 		int largo = nombres.length - 1;
 		System.out.println("Ingrese la posicion a eliminar (entre 0 y 4)");
-		i = sc.nextInt();
+		byte j = sc.nextByte();
 		do {
-			if(i==largo) {
+			if(j==largo) {
 				nombres[largo]="";
-				i++;
+				j++;
 			}else {
-				nombres[i]=nombres[i+1];
-				i++;
+				nombres[j]=nombres[j+1];
+				j++;
 			}
-		} while(i<=largo);
+		} while(j<=largo);
 		mostrar(nombres);
 		sc.close();
 	}
